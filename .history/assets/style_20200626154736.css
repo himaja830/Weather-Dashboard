@@ -1,0 +1,14 @@
+.card-body {
+    background-color: lightslategray;
+    text-align: center;
+    color:whitesmoke;
+}
+.btn-outline-secondary {
+    color:black;
+    background-color: lightslategray;
+    border: 2px solid black;
+    
+}
+.form-control {
+    border: 2px solid black;
+}

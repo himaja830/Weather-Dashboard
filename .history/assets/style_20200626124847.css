@@ -1,0 +1,9 @@
+.card-body {
+    background-color: lightslategray;
+    text-align: center;
+}
+.btn-outline-secondary:hover {
+    color:black;
+    background-color: lightslategray;
+    border-color: black;
+}

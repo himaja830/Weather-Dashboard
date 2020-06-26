@@ -1,0 +1,17 @@
+.card-body {
+    background-color: lightslategray;
+    text-align: center;
+    color:whitesmoke;
+}
+.btn-outline-secondary {
+    color:black;
+    background-color: lightslategray;
+    border: 2px solid white;
+    
+}
+.form-control {
+    border: 2px solid whitesmoke;
+}
+#searchList{
+    width: 20px;
+}
