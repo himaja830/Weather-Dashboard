@@ -1,0 +1,11 @@
+.jumbotron{
+    text-align: center;
+    background-color: slategrey;
+    color: snow;
+}
+button,input{
+    overflow: hidden;
+}
+.col-4{
+    overflow: hidden;
+}
