@@ -27,13 +27,14 @@ $.ajax({
 $.ajax({
     url: uvURL,
     method: "GET"
-}).then(function(response){
-    $("#UV-index").text("UV Index:"+response.value);
+}).then(function(response1){
+    $("#UV-index").text("UV Index:"+response1.value);
     $("#UV-index").attr("class",".badge badge-danger");
 //Making ajax call request to open Weather one call API to generate weather details for next 5 days
     var forecastURl = "https://api.openweathermap.org/data/2.5/onecall?lat="+lat+"&lon="+lon+"&units=imperial&exclude=hourly,minutely,current&appid="+apiKey;
     console.log(forecastURl);
-    
+    $("#day2").text("("+now+")");
+    $("#day3").text()
  
    
 })

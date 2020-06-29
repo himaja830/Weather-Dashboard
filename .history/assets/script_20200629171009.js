@@ -33,7 +33,6 @@ $.ajax({
 //Making ajax call request to open Weather one call API to generate weather details for next 5 days
     var forecastURl = "https://api.openweathermap.org/data/2.5/onecall?lat="+lat+"&lon="+lon+"&units=imperial&exclude=hourly,minutely,current&appid="+apiKey;
     console.log(forecastURl);
-    
  
    
 })

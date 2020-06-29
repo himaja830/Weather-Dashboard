@@ -23,6 +23,7 @@ $.ajax({
     var lat = response.coord.lat;
     var lon = response.coord.lon;
     var uvURL = "http://api.openweathermap.org/data/2.5/uvi?appid="+ apiKey+ "&lat=" + lat + "&lon=" + lon + "&cnt=1";
+    console.log(uvURL);
 //Creating AJAX call for UV index
 $.ajax({
     url: uvURL,
@@ -30,12 +31,10 @@ $.ajax({
 }).then(function(response){
     $("#UV-index").text("UV Index:"+response.value);
     $("#UV-index").attr("class",".badge badge-danger");
-//Making ajax call request to open Weather one call API to generate weather details for next 5 days
-    var forecastURl = "https://api.openweathermap.org/data/2.5/onecall?lat="+lat+"&lon="+lon+"&units=imperial&exclude=hourly,minutely,current&appid="+apiKey;
-    console.log(forecastURl);
-    
+    var forecastURl = "https://api.openweathermap.org/data/2.5/onecall?lat="+lat +"&lon="+lon + 
+    "& exclude=hourly,minutely,current&appid="+ apiKey;
  
-   
+  
 })
     
 
