@@ -33,11 +33,11 @@ Desktop:
 
 
 Tablet:
-![Tablet](https://github.com/himaja830/Weather-Dashboard/blob/master/assets/images/Ipad.png)
+![Tablet](https://github.com/himaja830/Weather-Dashboard/blob/master/assets/images/tablet.png)
 
 
 Mobile:
-![Mobile](https://github.com/himaja830/Weather-Dashboard/blob/master/assets/images/mobile.png)
+![Mobile](https://github.com/himaja830/Weather-Dashboard/blob/master/assets/images/Mobile.png)
 
 
 
