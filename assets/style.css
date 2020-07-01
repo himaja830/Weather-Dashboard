@@ -1,9 +1,32 @@
-.navbar-brand{
-    font-size:40px;
+body {
+    background-image: url("../assets/panjinda-iIqiI5fyZKs-unsplash.jpg");
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    overscroll-behavior-x: contain;
+    overflow-x: hidden;
+    width: 100vw;
 }
-.searchHeader{
+
+.navbar-brand {
+    font-size: 40px;
+}
+
+.searchHeader {
     font-size: 25px;
 }
-.city-name{
+
+.city-name {
     font-size: 30px;
+}
+
+.history-city-name {
+    font-size: medium;
+    border-color: black;
+    border-style: solid;
+    background-color: white;
+}
+#forecastContainer {
+    margin-right: 10px;
+}
+.margin {
+    margin-right: 10px;
 }

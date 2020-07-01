@@ -11,6 +11,7 @@
 </head>
 
 <body>
+    
     <nav class="navbar navbar-dark bg-dark">
         <span class="navbar-brand mb-0 h1 w-100 text-center">Weather Dashboard</span>
     </nav>
@@ -22,7 +23,7 @@
                     <input id="city-input" type="text" class="form-control" placeholder="Enter city name"
                         aria-label="Enter city name">
                     <div class="input-group-append">
-                        <button class="btn btn-primary" type="button" id="button-addon2">
+                        <button class="btn btn-dark" type="button" id="button-addon2">
                             <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-search" fill="currentColor"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd"
@@ -33,17 +34,26 @@
                         </button>
                     </div>
                 </div>
-                <form id="searchHistory"></form>
+                <div class="container">
+                    <div class="row">
+                        <div id="searchHistory" class="col">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="input-group-append">
+                    <button class="btn btn-dark" type="button" id="clearButton">clear history</button>
+                </div>
             </div>
             <div class="col-8">
-                <div class="row mr-0">
-                    <div class="col-12 border border-dark m-3 rounded">
+                <div class="row  margin">
+                    <div class="col-12 border border-dark  text-white m-3 rounded bg-dark">
                         <div class="row">
                             <div class="col-12">
                                 <span id="city-name" class="city-name align-middle"></span>
                                 <img id="wicon" src="" alt="">
-                                
-                             </div>
+
+                            </div>
                         </div>
                         <div class="row">
                             <div class="col-12">
@@ -72,21 +82,12 @@
                         <h3>5-Day Forecast:</h3>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col forecast bg-primary text-white ml-3 mb-3 rounded" id="#day2">
-                        
-                    </div>
-                    <div class="col forecast bg-primary text-white ml-3 mb-3 rounded" id="#day3">
-                        
-                    </div>
-                    <div class="col forecast bg-primary text-white ml-3 mb-3 rounded" id="#day4">
-                        
-                    </div>
-                    <div class="col forecast bg-primary text-white ml-3 mb-3 rounded"id="#day5">
-                        
-                    </div>
-                    <div class="col forecast bg-primary text-white ml-3 mb-3 rounded" id="#day6">
-                        
+                <div id="forecastContainer" class="row">
+                    <div id="dailyForecast" class="col col-md-3 col-sm-12 col-12 bg-light text-black ml-3 mb-3 rounded" style="display: none;">
+                        <p>Date: <span class="dailyForecast-date"></span></p>
+                        <img class="dailyForecast-icon">
+                        <p>Temperature: <span class="dailyForecast-temp"></span></p>
+                        <p>Humidity: <span class="dailyForecast-humidity"></span></p>
                     </div>
                 </div>
             </div>
